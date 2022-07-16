@@ -1,0 +1,117 @@
+body{
+    font-family: "Roboto", "Open Sans", sans-serif !important;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    background: #1e202b !important;
+    color: #bfc1c8;
+
+}
+.navbar-brand span{
+    color: white !important;
+}
+.clr{
+    clear: both;
+}
+
+.nav-link{
+    padding: 5px 25px !important;
+    border: 2px solid transparent !important;
+    border-radius: 30px !important;
+     color: white !important; 
+    -webkit-transition: 0.5s ease !important;
+    transition: 0.5s ease !important;
+    font-weight: 400;
+}
+.nav-link:hover, .active:hover{
+    border-color: #009ad8 !important;
+    color: #009ad8 !important;
+}
+/* search section */
+.search-city {
+    background-image: url(../banner.png);
+    min-height: 350px;
+    background-size: cover;
+    padding: 70px 0;
+    
+}
+.find-city{
+    position: relative;
+}
+.search {
+   
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+    border-radius: 30px;
+    border: none;
+}
+input[type="button"], input[type="button"]:hover{
+    position: absolute;
+    border-radius: 30px;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+    color: white;
+}
+.forcast-container{
+    width: 100%;
+    background: #323544;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+}
+.forcast{
+    width: 33.33%;
+}
+.forcast-container .forcast:nth-child(even) {
+    background-color: #262936 !important;
+}
+.forecast-header {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    font-weight: 400 !important;
+}
+.today-forcast .forecast-header .day {
+    float: left;
+}
+.today-forcast .forecast-header .date {
+    float: right;
+}
+#currentCity{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #bfc1c8 !important;
+
+}
+.forcast-content{
+padding-left: 4%;
+}
+#currentDegree {
+    font-size: 6.428571rem;
+    margin-right: 30px;
+    font-weight: revert;
+}
+.forcast-icon{
+    margin-bottom: 50px;
+}
+.maxdegree{
+font-size: 1.7142857143em;
+    color: white;
+    font-weight: 700
+}
+.custom {
+    color: #009ad8;
+    margin: 20px 0;
+}
+.today-forcast .forcast-content .forecast-icon {
+    display: inline-block !important;
+    vertical-align: middle !important;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+    <title>WEATHER</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light text-white p-5">
+      <div class="container">
+      <div class="logo">
+        
+        <a class="navbar-brand" href="index.html">
+          <img src="logo.png" alt="logo" srcset="" />
+          <span>  Weather</span>
+        </a>
+      </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                Live cameras
+              </a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                Photos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                Contact
+              </a>
+            </li>
+       </ul>
+      </div>
+    </nav>
+    <div class="search-city">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form  class="find-city">
+              <input type="search" name="search" id="search" class= "search" placeholder="find your city..">
+              <input type="button" value="find" id="submit" class="btn btn-info">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="forcast-container text-white">
+
+      
+            <div class="forcat-card today-forcast forcast">
+              <div class="forecast-header ">
+               <div class="day" id="currentDay">monday</div>
+               <div class="date" id="currentDate"> 7 june</div>
+               <div class="clr"></div>
+              </div>
+              <div class="forcast-content" id="current">
+                <div class="location " id="location"></div>
+                <div class="degree">
+                  <h2 id="currentDegree" class="d-inline-block"><sup>o</sup> c</h2>
+                </div>
+                <div class="forcast-icon" >
+                  <img src="logo.png" alt="" srcset=""id="todayIcon">
+                </div>
+                <p id="today-description"></p>
+                <div class="details">
+                  <i class="fas fa-umbrella pr-1"></i>
+                  <span id="humidty"></span> <span>%</span>
+
+                  <i class="fas fa-wind pl-3 pr-1"></i>
+                  <span id="wind"></span> <span>km/h</span>
+
+                  <i class="far fa-compass pl-3 pr-1"></i>
+                  <span id="compass"></span>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+            <div class="forcast text-center ">
+              <div class="forecast-header ">
+                <div class="day nextDay"></div>
+              </div>
+              <div class="forcast-content ">
+                <div class="forcast-icon" >
+                  <img src="logo.png" alt="" srcset=""class="nextIcon">
+                </div>
+              
+                <div class="degree">
+                  <div class="num maxdegree">36
+                    <sup>o</sup>
+                    c
+                  </div>
+                  <small class="mindegree">26.7<sup>o</sup></small>
+                </div>
+               <div class="custom">
+                
+               </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="forcast text-center">
+          <div class="forecast-header ">
+            <div class="day nextDay">tuesday</div>
+          </div>
+          <div class="forcast-content" ">
+            <div class="forcast-icon" >
+              <img src="logo.png" alt="" srcset=""class="nextIcon">
+            </div>
+          
+            <div class="degree">
+              <div class="num maxdegree">36
+                <sup>o</sup>
+                c
+              </div>
+              <small class="mindegree">26.7<sup>o</sup></small>
+            </div>
+           <div class="custom">
+         
+           </div>
+      </div>
+    </div>
+      </div>
+    </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
